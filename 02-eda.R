@@ -5,8 +5,11 @@ library(dplyr)
 library(tidyverse)
 
 # Categorize the collatz_df tibble by sequence length 
+initial_int <- 1:10000
+sequences <- lapply(initial_int, generate_collatz_sequence)
+
 sorted_collatz_df <- collatz_df %>%
-  mutate(seq_len = lengths(sequence)) %>%
+  mutate(seq_len = lengths(sequences)) %>%
   arrange(desc(seq_len))
 
 #Q1
