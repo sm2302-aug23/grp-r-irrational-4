@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+
 install.packages("purrr")
-=======
+
 # Finding the library
 library(tibble)
 library(tidyverse)
@@ -53,8 +53,7 @@ max_val_int <- collatz_df %>%
   arrange(desc(max_val)) %>%
   slice(1)
 
-=======
->>>>>>> f13e2281a3fdb3932f59f65a8a7c1129eb2e91c0
+
 
 library(tibble)
 library(purrr)
@@ -83,17 +82,13 @@ max_val_int <- collatz_df %>%
   select(start)
 
 # Question 3: Calculate the average length and standard deviation of the sequence for even and odd starting integers.
->>>>>>> fc8632292b3d41bdc65f468cddb6652d7383c6c9
+
 even_odd_stats <- collatz_df %>%
   group_by(parity) %>%
   summarize(
     even_odd_avg_len = mean(length),
     even_odd_sd_len = sd(length)
-<<<<<<< HEAD
-  )
-=======
-  )
-
+)
 # Extract the results
 even_odd_avg_len <- even_odd_stats$even_odd_avg_len
 even_odd_sd_len <- even_odd_stats$even_odd_sd_len
@@ -101,11 +96,3 @@ even_odd_sd_len <- even_odd_stats$even_odd_sd_len
 
 
 
-
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> fc8632292b3d41bdc65f468cddb6652d7383c6c9
->>>>>>> f13e2281a3fdb3932f59f65a8a7c1129eb2e91c0
