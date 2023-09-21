@@ -1,4 +1,8 @@
+install.packages("purrr")
 
+library(tibble)
+library(purrr)
+library(dplyr)
 
 # Create a tibble with integers from 1 to 10,000 and generate Collatz sequences
 collatz_df <- tibble(start = 1:10000) %>%
@@ -33,9 +37,6 @@ even_odd_stats <- collatz_df %>%
 # Extract the results
 even_odd_avg_len <- even_odd_stats$even_odd_avg_len
 even_odd_sd_len <- even_odd_stats$even_odd_sd_len
-
-
-
 
 
 
