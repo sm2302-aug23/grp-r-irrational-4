@@ -3,6 +3,11 @@ library(dplyr)
 
 # Assuming you already have the collatz_df tibble from Step 1
 
+# Recalculate the 'length' column by applying the length function to each 'seq' element
+collatz_df <- collatz_df %>%
+  mutate(length = map_dbl(seq, length))
+
+# Question 1: Find the top 10 starting integers that produce the longest sequences [top10longest].
 top10longest <- collatz_df %>%
   arrange(desc(length)) %>%
   slice(1:10)
