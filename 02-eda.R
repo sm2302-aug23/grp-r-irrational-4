@@ -25,7 +25,6 @@ gen_collatz <- function(n) {
   return(collatz_seq)
 }
 
-
 # Categorize the collatz_df tibble by sequence length 
 initial_int <- 1:10000
 sequences <- lapply(initial_int, gen_collatz)
