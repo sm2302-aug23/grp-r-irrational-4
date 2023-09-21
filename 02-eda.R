@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Finding the library
 library(tibble)
 library(tidyverse)
