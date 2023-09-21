@@ -33,3 +33,38 @@ for (i in 1:10000) {
 
 # Printing collatz_df
 print(collatz_df)
+
+# Finding the library
+library(tibble)
+
+# Collatz Function
+gen_collatz <- function(n) {
+  if (n <= 0 || !is.integer(n)) {
+    stop("Input must be positive.")
+  }
+  
+  collatz_seq <- c(n)
+  
+  while (n != 1) {
+    if (n %% 2 == 0) {
+      n <- n/2
+    } else {
+      n <- 3*n +1
+    }
+    collatz_seq <- c(collatz_seq, n)
+  }
+  
+  return(collatz_seq)
+}
+
+# Collatz Sequenxe Tibble
+start_values <- 1:10000
+sequences <- lapply(start_values, gen_collatz)
+
+collatz_df <- tibble(
+  start = start_values,
+  seq = sequences
+)
+
+# Printing Collatz_df
+head(collatz_df)
