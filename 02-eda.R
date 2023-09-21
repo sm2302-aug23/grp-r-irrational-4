@@ -17,7 +17,7 @@ top10longest <- collatz_df %>%
   arrange(desc(length)) %>%
   slice(1:10)
 
-max_val_int <- collatz_df %>%
+max_Val_int <- collatz_df %>%
   filter(max_val == max(max_val)) %>%
   select(start)
 
