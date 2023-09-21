@@ -1,5 +1,4 @@
 
-install.packages("purrr")
 
 # Finding the library
 library(tibble)
