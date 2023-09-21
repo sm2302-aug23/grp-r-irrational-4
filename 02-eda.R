@@ -38,8 +38,6 @@ collatz_df <- collatz_df %>%
 # top 10 starting integers
 top10longest <- collatz_df %>%
   head(10)
-View(top10longest)
-
 
 #Q2-----------------------
 # Determine the max value of each sequence and find the initial integer with the highest max
@@ -61,12 +59,15 @@ even_odd_stats <- collatz_df %>%
     sd_len = sd(sequence_length)
   )
 
-# Generate the results
+# Generating the outcome
 even_odd_avg_len <- even_odd_stats %>%
   pull(avg_len)
 
 even_odd_sd_len <- even_odd_stats %>%
   pull(sd_len)
+
+
+
 
 
 
