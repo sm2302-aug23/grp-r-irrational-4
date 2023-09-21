@@ -4,9 +4,31 @@ library(tibble)
 library(dplyr)
 library(tidyverse)
 
+# Determine gen_collatz
+
+gen_collatz <- function(n) { 
+  if (n <= 0 || !is.integer(n)) {
+    stop("Input must be positive")
+  }
+  
+  collatz_seq <- c(n)
+  
+  while (n != 1) {
+    if (n %% 2 == 0) {
+      n <- n/2
+    } else {
+      n <- 3 * n + 1
+    }
+    collatz_seq <- c(collatz_seq, n)
+  }
+  
+  return(collatz_seq)
+}
+
+
 # Categorize the collatz_df tibble by sequence length 
 initial_int <- 1:10000
-sequences <- lapply(initial_int, generate_collatz_sequence)
+sequences <- lapply(initial_int, gen_collatz)
 
 sorted_collatz_df <- collatz_df %>%
   mutate(seq_len = lengths(sequences)) %>%
