@@ -9,6 +9,9 @@ top10longest <- collatz_df %>%
   arrange(desc(seq_length)) %>%
   head(10)
 
+# Print the number of rows in top10longest
+cat("Number of rows in top10longest:", num_rows, "\n")
+
 # Saving the R object
 saveRDS(top10longest, "top10longest.RDS")
 
@@ -16,6 +19,9 @@ saveRDS(top10longest, "top10longest.RDS")
 max_val_int <- collatz_df %>%
   mutate(max_value = sapply(seq, max)) %>%
   filter(max_value == max(max_value))
+
+# Print the number of rows in max_val_int
+cat("Number of rows in max_val_int:", num_rows, "\n")
 
 # Save the R object
 saveRDS(max_val_int, "max_val_int.RDS")
@@ -29,6 +35,8 @@ even_odd_summary <- collatz_df %>%
     even_odd_sd_len = sd(lengths(seq))
   )
 
+# Print debug information
+cat("Number of rows in even_odd_summary:", nrow(even_odd_summary), "\n")
 
 # Save the R object
 saveRDS(even_odd_summary, "even_odd_summary.RDS")
