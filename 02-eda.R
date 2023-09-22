@@ -9,9 +9,6 @@ top10longest <- collatz_df %>%
   arrange(desc(seq_length)) %>%
   head(10)
 
-# Printing Q1
-print(top10longest)
-
 # Saving the R object
 saveRDS(top10longest, "top10longest.RDS")
 
@@ -23,10 +20,6 @@ max_val_int <- collatz_df %>%
 # Save the R object
 saveRDS(max_val_int, "max_val_int.RDS")
 
-# Printing Q2
-print(max_val_int)
-
-
 # Question 3: Calculate the average length and standard deviation of the sequence for even starting integers compared to odd ones
 even_odd_summary <- collatz_df %>%
   mutate(is_even = start %% 2 == 0) %>%
@@ -36,9 +29,6 @@ even_odd_summary <- collatz_df %>%
     even_odd_sd_len = sd(lengths(seq))
   )
 
-# Printing Q3
-
-print(even_odd_summary)
 
 # Save the R object
 saveRDS(even_odd_summary, "even_odd_summary.RDS")
