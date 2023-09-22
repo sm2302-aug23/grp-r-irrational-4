@@ -9,6 +9,9 @@ top10longest <- collatz_df %>%
   arrange(desc(seq_length)) %>%
   head(10)
 
+# Calculate the number of rows in top10longest
+num_rows <- nrow(top10longest)
+
 # Print the number of rows in top10longest
 cat("Number of rows in top10longest:", num_rows, "\n")
 
@@ -20,13 +23,17 @@ max_val_int <- collatz_df %>%
   mutate(max_value = sapply(seq, max)) %>%
   filter(max_value == max(max_value))
 
+# Calculate the number of rows in max_val_int
+num_rows_max_val_int <- nrow(max_val_int)
+
 # Print the number of rows in max_val_int
-cat("Number of rows in max_val_int:", num_rows, "\n")
+cat("Number of rows in max_val_int:", num_rows_max_val_int, "\n")
 
 # Save the R object
 saveRDS(max_val_int, "max_val_int.RDS")
 
 # Question 3: Calculate the average length and standard deviation of the sequence for even starting integers compared to odd ones
+# Calculate even_odd_summary
 even_odd_summary <- collatz_df %>%
   mutate(is_even = start %% 2 == 0) %>%
   group_by(is_even) %>%
@@ -35,8 +42,11 @@ even_odd_summary <- collatz_df %>%
     even_odd_sd_len = sd(lengths(seq))
   )
 
-# Print debug information
-cat("Number of rows in even_odd_summary:", nrow(even_odd_summary), "\n")
+# Calculate the number of rows in even_odd_summary
+num_rows <- nrow(even_odd_summary)
+
+# Print the number of rows in even_odd_summary
+cat("Number of rows in even_odd_summary:", num_rows, "\n")
 
 # Save the R object
 saveRDS(even_odd_summary, "even_odd_summary.RDS")
