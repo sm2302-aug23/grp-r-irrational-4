@@ -1,30 +1,49 @@
-library(tibble)
-library(dplyr)
+#Task 2
 
-# Assuming you already have the collatz_df tibble from Step 1
+library(tidyverse)
 
-# Recalculate the 'length' column by applying the length function to each 'seq' element
-collatz_df <- collatz_df %>%
-  mutate(length = map_dbl(seq, length))
 
-# Question 1: Find the top 10 starting integers that produce the longest sequences [top10longest].
+# Question 1: Find the top 10 starting integers that produce the longest sequences
 top10longest <- collatz_df %>%
-  arrange(desc(length)) %>%
-  slice(1:10)
+  mutate(seq_length = lengths(seq)) %>%
+  arrange(desc(seq_length)) %>%
+  head(10)
 
+# Printing Q1
+print(top10longest)
+
+# Saving the R object
+saveRDS(top10longest, "top10longest.RDS")
+
+# Question 2: Find out which starting integer produces a sequence that reaches the highest maximum value
 max_val_int <- collatz_df %>%
-  filter(max_val == max(max_val)) %>%
-  select(start)
+  mutate(max_value = sapply(seq, max)) %>%
+  filter(max_value == max(max_value))
 
-even_odd_stats <- collatz_df %>%
-  group_by(parity) %>%
+# Save the R object
+saveRDS(max_val_int, "max_val_int.RDS")
+
+# Printing Q2
+print(max_val_int)
+
+
+# Question 3: Calculate the average length and standard deviation of the sequence for even starting integers compared to odd ones
+even_odd_summary <- collatz_df %>%
+  mutate(is_even = start %% 2 == 0) %>%
+  group_by(is_even) %>%
   summarize(
-    even_odd_avg_len = mean(length),
-    even_odd_sd_len = sd(length)
+    even_odd_avg_len = mean(lengths(seq)),
+    even_odd_sd_len = sd(lengths(seq))
   )
 
-# Extract the results
-even_odd_avg_len <- even_odd_stats$even_odd_avg_len
-even_odd_sd_len <- even_odd_stats$even_odd_sd_len
+# Printing Q3
+
+print(even_odd_summary)
+
+# Save the R object
+saveRDS(even_odd_summary, "even_odd_summary.RDS")
+
+
+
 
 
