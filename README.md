@@ -9,6 +9,8 @@ submission instructions and marking rubric.
 
 # Summary 
 
+> Brief description of solutions to all the tasks
+
 ## Task 1
 This R code defines a function to compute the Collatz sequence for a given positive integer, generate Collatz sequences for a range of starting values, and store the results in a tibble for further analysis or visualisation.
 
