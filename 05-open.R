@@ -5,6 +5,6 @@
 # and small initial integer lead to shorter sequence?"
 
 # The process and methodology is trying to find if there is such a formula
-
+# that relates to the initial integer and length of the sequence.
 
 
