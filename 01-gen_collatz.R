@@ -1,5 +1,3 @@
-# Task 1
-
 # Finding the library
 library(tibble)
 library(tidyverse)
