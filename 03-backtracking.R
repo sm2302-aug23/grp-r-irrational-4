@@ -1,5 +1,3 @@
-# Task 3
-
 library(tidyverse)
 library(purrr)
 
