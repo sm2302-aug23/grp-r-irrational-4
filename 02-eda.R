@@ -2,7 +2,6 @@
 
 library(tidyverse)
 
-
 # Question 1: Find the top 10 starting integers that produce the longest sequences
 top10longest <- collatz_df %>%
   mutate(seq_length = lengths(seq)) %>%
