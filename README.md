@@ -24,6 +24,8 @@ This R code analyses Collatz sequences to answer several questions related to ba
 This R code created several appropriate graphs using `{ggplot2}`. These graphs are created to visualise the data wrangling tasks in Task 3. A scatterplot is created to identify the top 10 starting integers with the starting integer on the horizontal axis and the length of the sequence on the vertical axis. Another scatterplot is generated with the highest value reached in the sequence on the vertical axis. Lastly, a boxplot is produced to compare the distributions of sequence lengths for even and odd starting integers and see if there is any visible differences.
 
 ## Task 5
+Our group generated a question: "Will a large initial integer lead to longer sequence, and small large initial integer lead to shorter sequence".
+The process and methodology is trying to find if there is such a formula relating to the initial integer and sequence length. After researching, there is no specific formula. So, testing with different initial integers will be the second method. While most large starting integers lead to longer sequences, some also result in short sequences, and not only most small starting integers lead to short sequences but some of it generates long sequences. Therefore, it can be concluded that there is no official correlation and the result may vary.
 
 ### Contribution declaration
 - Task 1: Muqri
