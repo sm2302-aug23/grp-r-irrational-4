@@ -25,7 +25,7 @@ This R code created several appropriate graphs using `{ggplot2}`. These graphs a
 
 ## Task 5
 Our group generated a question: "Will a large initial integer lead to longer sequence, and small large initial integer lead to shorter sequence".
-The process and methodology is trying to find if there is such a formula relating to the initial integer and sequence length. After researching, there is no specific formula. So, testing with different initial integers will be the second method. While most large starting integers lead to longer sequences, some also result in short sequences, and not only most small starting integers lead to short sequences but some of it generates long sequences. Therefore, it can be concluded that there is no official correlation and the result may vary.
+The process and methodology is trying to find if there is such a formula relating to the initial integer and sequence length. After researching, there is no specific formula for it. So, testing with different initial integers will be the second method. While most large starting integers lead to longer sequences, some also result in short sequences, and not only most small starting integers lead to short sequences but some of it generates long sequences. Therefore, it can be concluded that there is no official correlation and the result may vary.
 
 ### Contribution declaration
 - Task 1: Muqri
