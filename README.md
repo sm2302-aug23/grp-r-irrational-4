@@ -28,7 +28,9 @@ The interesting question or pattern our team wanted to explore is: "Will differe
 
 The process of finding it, is by first researching if there is any specific formula relating to the initial integer and sequence length of the Collatz Conjecture. Our research indicated that there is no such specific formula. Hence, to find out if there is any correlation was to use different initial integers into the conjecture. For example, starting with small initial integers, such as 9 or 10, it is often observed that it tend to lead to shorter sequences before reaching the value of 1; however, there are some that would lead to longer sequences. Conversely, the same applies to large initial integers, where most of them would lead to longer sequences, but some would ultimately have very short sequences. Nevertheless, it is important to note that this pattern does not hold true for all integers, and the behaviour of the sequence can be quite unpredictable.
 
-![image](https://github.com/sm2302-aug23/grp-r-irrational-4/assets/141215572/6710aa45-040d-4ff9-898e-a50f5574645a)
+<p align="center">
+<![image](https://github.com/sm2302-aug23/grp-r-irrational-4/assets/141215572/6710aa45-040d-4ff9-898e-a50f5574645a)>
+</p>
 
 This lead to our team concluding that there is no specific correlation between the initial integer and length sequence, as it varies and does not have a determining pattern.
 In summary, while there is a general trend that larger initial integers tend to result in longer sequences and smaller initial integers in shorter sequences, this is not an absolute rule, and there are exceptions and complexities in the behaviour of the Collatz sequence that make it a challenging and unsolved mathematical problem.
