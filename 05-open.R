@@ -50,8 +50,12 @@ ggplot(sequences_df, aes(x = start, y = sequence_length)) +
   ggtitle("Collatz Sequence Length vs. Starting Integer") +
   theme_minimal()
 
-
-
+# Observation from the graph:
+# It is observed from the plot that small initial integers tend to lead to
+# shorter sequences before reaching the value of 1; however, there are some
+# that would lead to longer sequences. Conversely, the same applies to
+# large initial integers, where most of them would lead to longer sequences,
+# but some would ultimately have very short sequences.
 
 
 
