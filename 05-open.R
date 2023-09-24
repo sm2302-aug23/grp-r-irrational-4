@@ -1,11 +1,14 @@
 # Task 5 (Open-ended exploration)
 
-# One interesting question:
-# "Will a large initial integer lead to longer sequence,
-# and small initial integer lead to shorter sequence?"
+# The interesting question or pattern our team wanted to explore is: 
+# "Will different initial integers result in different length sequences: 
+# will large initial integers result in longer length sequences and
+# small initial integers result in shorter length sequences?"
 
-# The process and methodology is trying to find if there is such a formula
-# that relates to the initial integer and length of the sequence.
+# The process of finding it, is by first researching if there is any specific
+# formula or correlation relating to the initial integer and sequence length
+# of the Collatz Conjecture.
+
 
 library(tidyverse)
 library(purrr)
