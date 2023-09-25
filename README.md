@@ -44,3 +44,13 @@ In summary, while there is a general trend that larger initial integers tend to 
 - Task 6:
 - README: Erika
 
+### References 
+1. *Program to Print Collatz Sequence.* (2022, June 22). Geeksforgeeks. https://www.geeksforgeeks.org/program-to-print-collatz-sequence/
+2. *Maximum Sequence Length | Collatz Conjecture.* (2023, Feb 14). Geeksforgeeks. https://www.geeksforgeeks.org/maximum-sequence-length-collatz-conjecture/
+3. [*Rstudio: for-loop of a sequence](https://stackoverflow.com/questions/77165760/rstudio-for-loop-of-a-sequence).* (n.d). Stackoverflow. https://stackoverflow.com/questions/77165760/rstudio-for-loop-of-a-sequence
+4. *ifelse: Conditional Element Selection.* (n.d). Rdocumentation. https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/ifelse
+5. *Euler Problem 14: Longest Collatz Sequence.* (2017, March 1). R-bloggers. https://www.r-bloggers.com/2017/03/euler-problem-14-longest-collatz-sequence/
+6. Lapply function in R. (n.d). R Coder. https://r-coder.com/lapply-r/
+7. *Filter data by multiple conditions in R using Dplyr.* (2022, Jan 25). Geeksforgeeks. https://www.geeksforgeeks.org/filter-data-by-multiple-conditions-in-r-using-dplyr/
+8. *Tidyverse.* (n.d). ggplot2. https://ggplot2.tidyverse.org/
+
