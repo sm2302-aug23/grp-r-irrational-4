@@ -35,6 +35,15 @@ The process of finding it, is by first researching if there is any specific form
 This lead to our team concluding that there is no specific correlation between the initial integer and length sequence, as it varies and does not have a determining pattern.
 In summary, while there is a general trend that larger initial integers tend to result in longer sequences and smaller initial integers in shorter sequences, this is not an absolute rule, and there are exceptions and complexities in the behaviour of the Collatz sequence that make it a challenging and unsolved mathematical problem.
 
+## Task 6 (Creative visualisation challenge)
+
+In this task, we provide a concise code (concise way to visualize the Collatz Conjecture in R by focusing on the change in sequence lengths over a range of starting integers) where we define a function to calculate Collatz sequence lengths, generate a range of starting integers, calculate the sequence lengths for each starting integer, and then create a line plot to visualize how the sequence lengths change as the starting integer varies.
+
+This visualization provides a quick overview of how the Collatz sequence lengths change over a specified range of starting integers, showing any interesting patterns or trends.
+
+![image](https://github.com/sm2302-aug23/grp-r-irrational-4/assets/141397076/6b299cdf-e0d0-4ccc-9307-6876bc168ad3)
+
+
 ### Contribution declaration
 - Task 1: Muqri
 - Task 2: Azyan
