@@ -11,19 +11,19 @@ submission instructions and marking rubric.
 
 > Brief description of solutions to all the tasks
 
-## Task 1
+## Task 1 (Generating the Collatz Conjecture)
 This R code defines a function to compute the Collatz sequence for a given positive integer, generate Collatz sequences for a range of starting values, and store the results in a tibble for further analysis or visualisation.
 
-## Task 2
+## Task 2 (Exploratory data analysis)
 This R code analyses the Collatz sequences generated in the previous section using `{tidyverse}`. Also, the R code provides answers to three questions related to the sequences: finding the top 10 starting integers with the longest sequences, identifying the starting integer with the highest maximum value in its sequence, and comparing the average length as well as standard deviation of sequences for even and odd starting integers. The results are saved as RDS files for further use.
 
-## Task 3
+## Task 3 (Investigating "backtracking" in sequences)
 This R code explores the concept of "backtracking" within the Collatz sequences to answer several questions: the number of times the sequences go above their starting values, the maximum value reached after the first backtrack, and whether backtracking sequences are more common among even or odd starting integers. The results are stored and printed for further analysis.
 
-## Task 4
+## Task 4 (Visualisations)
 This R code created several appropriate graphs using `{ggplot2}`. These graphs are created to visualise the data wrangling tasks in Task 3. A scatterplot is created to identify the top 10 starting integers with the starting integer on the horizontal axis and the length of the sequence on the vertical axis. Another scatterplot is generated with the highest value reached in the sequence on the vertical axis. Lastly, a boxplot is produced to compare the distributions of sequence lengths for even and odd starting integers and see if there is any visible differences.
 
-## Task 5
+## Task 5 (Open-ended exploration)
 The interesting question or pattern our team wanted to explore is: "Will different initial integers result in different length sequences: will large initial integers result in longer length sequences and small initial integers result in shorter length sequences?" 
 
 The process of finding it, is by first researching if there is any specific formula relating to the initial integer and sequence length of the Collatz Conjecture. Our research indicated that there is no such specific formula. Hence, to find out if there is any correlation was to use different initial integers into the conjecture. For example, for a range of initial integers from 1 to 100, it is often observed that small initial integers tend to lead to shorter sequences before reaching the value of 1; however, there are some that would lead to longer sequences. Conversely, the same applies to large initial integers, where most of them would lead to longer sequences, but some would ultimately have very short sequences. Nevertheless, it is important to note that this pattern does not hold true for all integers, and the behaviour of the sequence can be quite unpredictable.
