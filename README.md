@@ -50,7 +50,7 @@ This visualization provides a quick overview of how the Collatz sequence lengths
 - Task 3: Syasya
 - Task 4: Azyan
 - Task 5: Muqri and Erika
-- Task 6:
+- Task 6: Azyan and Syasya
 - README: Erika
 
 ### References 
